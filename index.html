@@ -13,7 +13,46 @@
 </head>
 
 <body>
-
+    <div class="container">
+        <header class="header">
+            <a href="/">
+                <img src="./img/logo.png" alt="Trillo Logo" class="logo">
+            </a>
+            <form action="#" class="search">
+                <input type="text" class="search__input">
+                <button class="search__button">
+                    <svg viewBox="0 0 16 16" class="search__icon">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </button>
+            </form>
+            <nav class="user-navigation">
+                <div class="user-navigation__icon-box">
+                    <svg viewBox="0 0 16 16" class="user-navigation__icon">
+                        <path
+                            d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+                    </svg>
+                    <span class="user-navigation__notification">5</span>
+                </div>
+                <div class="user-navigation__icon-box">
+                    <svg viewBox="0 0 16 16" class="user-navigation__icon">
+                        <path
+                            d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                    </svg>
+                    <span class="user-navigation__notification">13</span>
+                </div>
+                <div class="user-navigation__user">
+                    <img src="./img/user.jpg" alt="Jonas" class="user-navigation__photo">
+                    <span class="user-navigation__name">Jonas</span>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <aside class="menu">Menu</aside>
+            <main class="hotel">Hotel</main>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,31 @@
+.container {
+    max-width: 75rem;
+    min-height: 50rem;
+    margin: 5rem auto;
+    background-color: var(--color-grey-light-1);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, var(--shadow));
+}
+
+.header {
+    height: 5rem;
+    background-color: var(--color-white);
+    border-bottom: 2px solid var(--color-grey-light-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+}
+
+.menu {
+    background-color: var(--color-grey-dark-1);
+    height: 5rem;
+    flex: 0 0 20%;
+}
+
+.hotel {
+    background-color: var(--color-white);
+    flex: 1;
+}

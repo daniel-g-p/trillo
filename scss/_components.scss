@@ -1,0 +1,18 @@
+.logo {
+    height: 2rem;
+}
+
+.search {
+    &__icon {
+        height: 1rem;
+    }
+}
+
+.user-navigation {
+    &__icon {
+        height: 1rem;
+    }
+    &__photo {
+        height: 3rem;
+    }
+}
