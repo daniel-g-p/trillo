@@ -1,18 +1,98 @@
 .logo {
     height: 2rem;
+    margin-left: 1rem;
 }
 
 .search {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 50%;
+    &__input {
+        font: inherit;
+        color: var(--color-grey-dark-1);
+        background-color: var(--color-grey-light-2);
+        border: none;
+        outline: none;
+        padding: 0 1.5em;
+        border-radius: 2em;
+        width: 90%;
+        height: 2.5em;
+        line-height: 2.5;
+        transition: all 0.25s ease;
+        &:focus {
+            background-color: var(--color-grey-light-3);
+            width: 100%;
+        }
+        &::placeholder {
+            color: var(--color-grey-dark-3);
+        }
+    }
+    &__button {
+        border: none;
+        outline: none;
+        height: 2.5rem;
+        border-radius: 50%;
+        flex: 0 0 2.5rem;
+        margin-left: -2.5rem;
+        background-color: var(--color-grey-light-2);
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            background-color: var(--color-grey-light-3);
+        }
+    }
+    &__button:hover &__icon>path,
+    &__button:focus &__icon>path {
+        fill: var(--color-primary-dark);
+    }
     &__icon {
         height: 1rem;
+        &>path {
+            transition: fill 0.25s ease;
+        }
     }
 }
 
 .user-navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: stretch;
+    &>* {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0 1rem;
+        cursor: pointer;
+    }
+    &>*:hover {
+        background-color: var(--color-grey-light-2);
+    }
     &__icon {
         height: 1rem;
+        &>path {
+            fill: var(--color-grey-dark-1);
+        }
+    }
+    &__notification {
+        position: absolute;
+        top: 1.25rem;
+        right: 0.5rem;
+        font-size: 0.5rem;
+        text-align: center;
+        line-height: 2;
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+        color: var(--color-white);
     }
     &__photo {
-        height: 3rem;
+        height: 2rem;
+        border-radius: 50%;
+        margin-right: 0.75rem;
     }
 }

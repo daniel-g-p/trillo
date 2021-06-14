@@ -1,6 +1,5 @@
 .container {
-    max-width: 75rem;
-    min-height: 50rem;
+    max-width: 60rem;
     margin: 5rem auto;
     background-color: var(--color-grey-light-1);
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, var(--shadow));
@@ -17,12 +16,37 @@
 
 .content {
     display: flex;
+    align-items: stretch;
+    height: 50rem;
 }
 
 .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
     background-color: var(--color-grey-dark-1);
-    height: 5rem;
     flex: 0 0 20%;
+    &__link {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+    }
+    &__link-icon {
+        height: 1rem;
+        margin-right: 0.5rem;
+        &>path {
+            fill: var(--color-white);
+        }
+    }
+    &__legal {
+        font-size: 0.75rem;
+        text-align: center;
+        color: var(--color-grey-light-4);
+        padding: 1rem;
+    }
 }
 
 .hotel {
