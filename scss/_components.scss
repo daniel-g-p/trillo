@@ -221,3 +221,22 @@
         }
     }
 }
+
+.button-underline {
+    color: var(--color-primary);
+    border-bottom: 1px solid currentColor;
+    display: inline-block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: color 0.25s ease;
+    flex: 1;
+    &__text {
+        transition: margin-right 0.25s ease;
+    }
+    &:hover {
+        color: var(--color-grey-dark-1);
+    }
+    &:hover>.button-underline__text {
+        margin-right: 0.5rem;
+    }
+}
