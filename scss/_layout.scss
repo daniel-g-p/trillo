@@ -1,6 +1,6 @@
 .container {
-    max-width: 75%;
-    margin: 5rem auto;
+    width: 75%;
+    margin: 3rem auto;
     background-color: var(--color-grey-light-1);
     box-shadow: 0 0 8rem rgba(0, 0, 0, 0.25);
 }
@@ -212,8 +212,10 @@
                 top: 125%;
             }
         }
-        &:hover {
+        &:hover,
+        &:focus {
             background-position: right;
+            outline: none;
             &::before {
                 top: -25%;
             }
